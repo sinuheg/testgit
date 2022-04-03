@@ -1,5 +1,5 @@
 from PIL import Image
-im = Image.open('dotted-place-template-aguila.png')
+im = Image.open('img/dotted-place-template-aguila.png')
 pixelMap = im.load()
 
 img = Image.new( im.mode, im.size)
@@ -11,5 +11,5 @@ for i in range(img.size[0]):
         pixelsNew[i,j] = pixelMap[i,j]
 im.close()
 img.show()       
-img.save("out.png") 
+img.save("img/out.png") 
 img.close()
